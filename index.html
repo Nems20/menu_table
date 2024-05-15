@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<style>
+     *{
+    padding:0;
+    margin:0;
+}
+body{
+        min-height: 100vh;
+        background-image: url(https://i.pinimg.com/236x/26/07/d9/2607d961d63528d04d5b204381c63551.jpg);
+        background-size: cover;     
+        display:flex;
+        justify-content: center;
+        align-items:center;
+    }
+    .table-striped{
+        padding: 10px;
+    }
+
+
+   
+    div table{
+       
+        background-color: rgba(222, 205, 205, 0.548);
+    
+    }
+    .name{
+        font-weight: 100;
+    }
+    th{
+       
+        width:100%;
+        height:10%;
+        justify-content: center;
+        background-color:#fff4;
+        padding: .8rem 1rem;
+        padding-bottom: 12px;
+    }
+    .style{
+        color: rgb(65, 103, 169);
+         
+        font-weight: 600;
+    }
+    .box{
+        background-color: green;
+        padding: .4rem 0;
+        font-size: small;
+        font-weight:bold ;
+        color: white;
+        
+    }
+    .rectangle{
+        background-color: red;
+         padding-top:.1px;        
+         font-size: small;
+         font-weight:bold ;
+         color: white;
+        
+    }
+    .box,.rectangle{
+        text-align: center;
+    
+    }
+    th,td{
+        padding:20px;
+        
+    }
+    tbody tr:hover{
+        background-color: rgba(77, 149, 194, 0.342);
+    }
+    .name tbody tr:nth-of-type(even){
+        position: sticky;
+    }
+    main.table{
+        width:82vw;
+        height: 90vh;
+        background-color: #fff5;
+        backdrop-filter: blur(7px);
+        box-shadow:0  .4rem  .8rem #0005;
+        border-radius:.8rem;
+        overflow: scroll;
+
+       
+
+    }
+    .table-striped::-webkit-scrollbar{
+        width:0.5rem;
+        height: 0.5rem;
+
+
+    }
+    .table-striped::-webkit-scrollbar-thumb{
+        border-radius:.5rem;
+        background-color:#0004;
+        visibility:hidden;
+
+    }
+    .table-responsive-sm{
+        width:100%;
+        height:100%;
+        justify-content: center;
+        background-color:#fff4;
+        padding: .8rem 1rem;
+        
+    }
+
+</style>
+<body>
+    <main class="table">   
+  <div class="table-responsive-sm">
+
+  <table class="table-striped">
+    <thead>
+        <tr class="name">
+            <th>INVOICE</th>
+            <th>CATEGORY</th>
+            <th>ITEM NAME</th>
+            <th>QUANTITY</th>
+            <th>PRICE</th>
+            <th>TOTAL PRICE</th>
+            <th>STATUS</th>
+     
+        </tr>
+    </thead>
+  <tbody>
+    <tr>
+        <td>0011</td>
+        <td class="style">Desserts</td>
+        <td>Leche Flan</td>
+        <td>2 ord.</td>
+        <td>₱100.00</td>
+        <td><strong>200.00</strong></td>
+        <td class="rectangle">Take Out</td>
+    </tr>
+    <tr>
+        <td>0025</td>
+        <td class="style">Group Sets</td>
+        <td>Pancit Canton Tray</td>
+        <td>1 ord.</td>
+        <td>₱1,099.00</td>
+        <td><strong>₱1,099.00</strong></td>
+        <td class="box">Dine In</td>
+    </tr>
+    <tr>
+        <td>0065</td>
+        <td class="style">Ruby's Favorite</td>
+        <td>Pork Barbecue/td>
+        <td>3 ord.</td>
+        <td>₱241.00</td>
+        <td><strong>₱723.00</strong></td>
+        <td class="rectangle">Take Out</td>
+    </tr>
+    <tr>
+        <td>0009</td>
+        <td class="style">Max's Fried Chicken</td>
+        <td>Family Chicken Basket 8pcs</td>
+        <td>1 ord.</td>
+        <td>₱999.00</td>
+        <td> <strong>₱400.00</strong></td>
+        <td class="box">Dine In</td>
+    </tr>
+    <tr>
+        <td>0013</td>
+        <td class="style">Best Seller</td>
+        <td>Beef Kare-Kare</td> 
+        <td>1 ord.</td>
+        <td>₱919.00</td>
+        <td><strong>₱919.00</strong></td>
+        <td class="rectangle">Take Out</td>
+    </tr>
+    <tr>
+        <td>0024</td>
+        <td class="style">Desserts</td>
+        <td>Triple Chocolate Champorado</td>
+        <td>3 ord.</td>
+        <td>₱171.00</td>
+        <td> <strong>₱423.00</strong></td>
+        <td class="box">Dine In</td>
+    </tr>
+    <tr>
+        <td>0005</td>
+        <td class="style">Promo</td>
+        <td>All-in-one Bundle 7</td>
+        <td>1 ord.</td>
+        <td>₱2,361.00</td>
+        <td> <strong>₱2,361.00</strong></td>
+        <td class="box">Dine In</td>
+    </tr>
+    <tr>
+        <td>0016</td>
+        <td class="style">Promo</td>
+        <td>Classic Delivery Trio</td>
+        <td>1 ord.</td>
+        <td>₱1,199.00</td>
+        <td><strong>₱1,199.00</strong></td>
+        <td class="box">Dine In</td>
+    </tr>
+    <tr>
+        <td>0020</td>
+        <td class="style">Max's Fried Chicken</td>
+        <td>Family Chicken Basket 8pcs</td>
+        <td>1 ord.</td>
+        <td>₱999.00</td>
+        <td><strong>₱999.00</strong></td>
+        <td class="rectangle">Take Out</td>
+    </tr>
+    <tr>
+        <td>0002</td>
+        <td  class="style">Max's Corner Bakery</td>
+        <td >Choco Meringyue Delight</td>
+        <td>1 ord.</td>
+        <td>₱955.00</td>
+        <td><strong>₱955.00</strong></td>
+        <td class="box">Dine In</td>
+    </tr>
+    <tr>
+        <td>0014</td>
+        <td class="style">Ruby's Favorite</td>
+        <td>Crispy Oxtail Kare-Kare</td>
+        <td>2pc.</td>
+        <td>₱919.00</td>
+        <td> <strong>₱919.00</strong></td>
+        <td class="rectangle">Take Out</td>
+    </tr>
+    <tr>
+        <td>0019</td>
+        <td class="style">Ruby's Favorite</td>
+        <td>Sinigang na Baboy</td>
+        <td>1 ord.</td>
+        <td>₱560.00</td>
+        <td><strong>₱560.00</strong></td>
+        <td class="box">Dine In</td>
+    </tr>
+    <tr>
+        <td>0007</td>
+        <td class="style">Solo Meals</td>
+        <td>Cicken Sisig Rice Bowl</td>
+        <td>4 ord.</td>
+        <td>₱205.00</td>
+        <td><strong>₱820.00</strong></td>
+        <td class="rectangle">Take Out</td>
+    </tr>
+    <tr>
+        <td>0015</td>
+        <td class="style">Max's Fried Chicken</td>
+        <td>Condiments Trio</td>
+        <td>4 ord.</td>
+        <td>₱149.00</td>
+        <td><strong>₱596.00</strong></td>
+        <td class="box">Dine In</td>       
+    </tr>
+    <tr>
+        <td>0006</td>
+        <td class="style">Solo Meals</td>
+        <td>Shanghai Rice Bowl</td>
+        <td>3 ord.</td>
+        <td>₱185.00</td>
+        <td><strong>₱355.00</strong></td>
+        <td class="rectangle">Take Out</td>
+    </tr>
+    <tr>
+        <td>0021</td>
+        <td class="style">Group Sets</td>
+        <td>Lumpiang Shanghai Tray</td>
+        <td>1 ord.</td>
+        <td>₱1,385.00</td>
+        <td><strong>₱1,385.00</strong></td>
+        <td class="box">Dine In</td>
+    </tr>
+    <tr>
+        <td>0028</td>
+        <td class="style">Group Sets</td>
+        <td>Fried Chicken Tray</td>
+        <td>1 ord.</td>
+        <td>₱2,199.00</td>
+        <td><strong>₱2,199.00</strong></td>
+        <td class="rectangle">Take Out</td>
+    </tr>
+    <tr>
+        <td>0022</td>
+        <td class="style">Promo</td>
+        <td>All-in-Bundle 4</td>
+        <td> 1 ord.</td>
+        <td>₱1,343.00</td>
+        <td><strong>₱1,343.00</strong></td>
+        <td class="box">Dine In</td>
+    </tr>
+    <tr>
+        <td>0017</td>
+        <td class="style">Max's Corner Bakery</td>
+        <td>Black Forest</td>
+        <td>1 ord.</td>
+        <td>₱955.00</td>
+        <td><strong>₱955.00</strong></td>
+        <td class="rectangle">Take Out</td>
+    </tr>
+    <tr>
+        <td>0029</td>
+        <td class="style">Best Seller</td>
+        <td>Sinigang na Tiyan ng Bangus</td>
+        <td>2 ord.</td>
+        <td>₱515.00</td>
+        <td><strong>₱1,030.00</strong></td>
+        <td class="box">Dine In</td>
+    </tr>
+  </tbody>
+  </table>
+</div>
+</div>
+</main>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
